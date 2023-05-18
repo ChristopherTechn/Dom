@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="ledger">
+        <h2>TRACKER</h2>
+        <h4>Your Balance</h4>
+        <h1 id="balance">Ksh 0.00</h1>
+        <!-- <div class="inc-exp-container">
+          <div class="inc">
+            <h4>Income</h4>
+            <p id="inc-amt" class="amt plus">ksh 0.00</p>
+          </div>
+          <div class="exp">
+            <h4>Expense</h4>
+            <p id="exp-amt" class="amt minus">ksh 0.00</p>
+          </div>
+        </div> -->
+        <form action="#" id="form">
+          <div class="form-control">
+            <label for="desc">Description</label>
+            <input type="text" name="desc" id="desc" placeholder="Enter Description" />
+          </div>
+
+          <div class="form-control">
+            <label for="amount">Amount if income must be positive else if expense negative</label>
+            <input type="number" name="amount" id="amount" placeholder="Amount" />
+          </div>
+          <button class="btn" type="submit">Add Transaction</button>
+        </form>
+      </div>
+      <div class="transaction">
+        <h3>Transaction Details</h3>
+        <ul class="trans" id="trans">
+          <li class="exp">
+            Insurance
+            <span>-1500</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="inc">
+            Salary
+            <span>35000</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Food
+            <span>-350</span>
+            <button class="btn-del">x</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="inde.js"></script>
+  </body>
+</html>
